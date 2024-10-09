@@ -39,6 +39,7 @@ a{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    padding-top: 1rem;
 }
 
 #logo{
@@ -63,6 +64,58 @@ a{
     color: var(--collor-one);
 }
 
-.contact{
-    font-weight: 600;
+img{
+    width: 50px;
+}
+
+
+/* -----home styles---------- */
+
+.home{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 0;
+}
+
+.left-div{
+    width: 50%;
+}
+
+.left-div h3{
+    color: var(--p-collor);
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.left-div h1{
+    font-size: 5.5rem;
+    line-height: 6rem;
+}
+
+.left-div p{
+    font-size: 1.4rem;
+    color: var(--p-collor);
+}
+
+
+.left-div h1 span{
+    color: var(--collor-one);
+}
+
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 425px;
+    width: 425px;
+    border-radius: 50%;
+    border: 1px solid var(--hover-collor) ;
+}
+
+.profile{
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
 }

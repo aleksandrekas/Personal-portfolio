@@ -15,18 +15,45 @@
                 <li class="list-item"><a href="#" class="list-link">Projects</a></li>
                 <li class="list-item"><a href="#" class="list-link">About</a></li>
             </ul>
-            <a class="contact" href="#"><img src="images/contact-message-svgrepo-com.svg" alt="contact"></a>
+            <a class="contact" href="#contact"><img src="images/contact-message-svgrepo-com.svg" alt="contact"></a>
         </nav>
         <section class="home">
             <div class="left-div">
                 <h3>Hello,I'm Alex</I></h3>
                 <h1><span>Front</span>end Developer</h1>
-                <p>I'm a frontend developer based in georgia,I will help you to build beautifull websites</p>
+                <p>I'm a frontend developer based in Georgia,I will help you to build beautifull websites</p>
+                <button onclick="window.location.href='#contact'"" class="btn purple-btn">Contact Me</button>
+                <button class="btn white-btn" >Browse Projects</button>
             </div>
             <div class="image-container">
                 <img class="profile" src="images/d10cd78d-383f-4855-8fca-275833490482.jpg" alt="">
             </div>
         </section>
+        <section id="contact" class="contact-me">
+            <div class="contact-info">
+                <h1 >Contact Me</h1>
+                <p>Looking for Frontend developer to work with? Contact me through the form and i'll get back to you as soon as i can</p>
+                <div class="info-container">
+                    <img src="images/mail-svgrepo-com.svg" alt="mail">
+                    <p>aleksandrekasrashvili@gmail.com</p>
+                </div>
+                <div class="info-container">
+                    <img src="images/phone-svgrepo-com.svg" alt="phone">
+                    <p>+995 598 11 24 71</p>
+                </div>
+            </div>
+            <form class="contact-form">
+                <label for="name" id="n-label">Your name</label>
+                <input id="name" type="text" name="name">
+                <label for="last-name" id="ln-label">Last name</label>
+                <input id="last-name" type="text" name="last-name">
+                <label for="email" id="em-label">Email</label>
+                <input type="email" class="mail" name="email">
+                <label for="content" id="message">Message</label>
+                <textarea name="content" id="mail-content"></textarea>
+                <input type="submit" class="button-sub" value="Send">
+            </form>
+        </section>        
     </div>
     <script src="scripts.js"></script>
 </body>

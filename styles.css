@@ -13,6 +13,9 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 
 
@@ -32,6 +35,9 @@ a{
     color: var(--collor-two);
 }
 
+h1{
+    color: var(--collor-two);
+}
 
 /* ------navbar---- */
 
@@ -91,7 +97,7 @@ img{
 .left-div h1{
     font-size: 5.5rem;
     line-height: 6rem;
-    margin-bottom: 1.4rem;
+    margin-bottom: 2rem;
 }
 
 .left-div p{
@@ -119,4 +125,182 @@ img{
     width: 340px;
     height: 340px;
     border-radius: 50%;
+}
+
+.btn{
+    padding: 0px 15px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 2rem 0;
+    transition: 0.3s;
+}
+
+
+.purple-btn{
+    background-color: var(--collor-one);
+    color: white;
+    border: none;
+}
+
+
+.purple-btn:hover{
+    background-color: var(--hover-collor);
+}
+
+
+.white-btn{
+    border: 1px solid black;
+    background-color: white;
+}
+
+.white-btn:hover{
+    background-color: var(--collor-two);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/* -------contact me------------------ */
+
+.contact-me{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 18rem 0;
+}
+
+
+.contact-form {
+    display: grid;
+    width: 30%;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-areas:
+        "n-label ln-label" 
+        "name last"
+        "em-label em-label "
+        "email email"
+        "message message"
+        "text text"
+        "send send"; 
+    gap: 15px; 
+}
+
+#name {
+    grid-area: name;
+    
+
+}
+
+#last-name {
+    grid-area: last;
+}
+
+.mail { 
+    grid-area: email;
+}
+
+#mail-content {
+    grid-area: text;
+    height: 100px;
+    resize: none; 
+    border-radius: 10px;
+    border: 1px solid var(--p-collor);
+    padding: 0.5rem;
+    outline: none;
+}
+
+#mail-content:focus{
+    background-color:rgb(247, 244, 244) ;
+}
+
+.button-sub {
+    grid-area: send;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    justify-self: end; 
+    background: var(--collor-one);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.button-sub:hover{
+    background-color: var(--hover-collor);
+}
+
+input{
+    border-radius: 10px;
+    border: 1px solid var(--p-collor);
+    height: 30px;
+    padding: 0 0.5rem;
+    outline: none;
+}
+
+input:focus{
+    border: 1px solid var(--p-collor);
+    background-color: rgb(247, 244, 244);
+}
+
+
+#n-label{
+    grid-area: n-label;
+}
+
+#ln-label{
+    grid-area: ln-label;
+}
+
+#em-label{
+    grid-area: em-label;
+}
+
+#message{
+
+    grid-area: message;
+}
+
+
+.contact-info{
+    width: 50%;
+}
+
+.info-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.info-container img{
+    width: 50px;
+    padding: 10px;
+    border: 1px solid var(--p-collor);
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.contact-info h1{
+    font-size: 4rem;
+}
+
+
+.contact-info p{
+    font-size: 1.4rem;
+    color: var(--p-collor);
 }

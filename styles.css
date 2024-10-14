@@ -186,8 +186,8 @@ img{
     width: 30%;
     grid-template-columns: 1fr 1fr; 
     grid-template-areas:
-        "n-label ln-label" 
-        "name last"
+        "n-label n-label" 
+        "name name"
         "em-label em-label "
         "email email"
         "message message"
@@ -302,5 +302,15 @@ input:focus{
 
 .contact-info p{
     font-size: 1.4rem;
+    color: var(--p-collor);
+}
+
+#mail-info{
+    cursor: pointer;
+}
+
+
+.info-container a{
+    font-size: 1.2rem;
     color: var(--p-collor);
 }

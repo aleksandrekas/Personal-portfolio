@@ -35,26 +35,38 @@
                 <p>Looking for Frontend developer to work with? Contact me through the form and i'll get back to you as soon as i can</p>
                 <div class="info-container">
                     <img src="images/mail-svgrepo-com.svg" alt="mail">
-                    <p>aleksandrekasrashvili@gmail.com</p>
+                    <a href="mailto:aleksandrekasrashvili@gmail.com" id="mail-info">aleksandrekasrashvili@gmail.com </a>
                 </div>
                 <div class="info-container">
                     <img src="images/phone-svgrepo-com.svg" alt="phone">
                     <p>+995 598 11 24 71</p>
                 </div>
             </div>
-            <form class="contact-form">
+            <form id="form-mail" class="contact-form">
                 <label for="name" id="n-label">Your name</label>
                 <input id="name" type="text" name="name">
-                <label for="last-name" id="ln-label">Last name</label>
-                <input id="last-name" type="text" name="last-name">
+                
+                
                 <label for="email" id="em-label">Email</label>
-                <input type="email" class="mail" name="email">
+                <input type="email" class="mail" id="email" name="email">
+                
                 <label for="content" id="message">Message</label>
                 <textarea name="content" id="mail-content"></textarea>
-                <input type="submit" class="button-sub" value="Send">
+                
+                <input type="submit"  class="button-sub" value="Send">
             </form>
         </section>        
     </div>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+            publicKey: "fWILeVzxiF7ZFViVh",
+         });
+        })();
+    </script>
     <script src="scripts.js"></script>
 </body>
 </html>

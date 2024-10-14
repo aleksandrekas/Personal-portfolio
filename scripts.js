@@ -1,18 +1,15 @@
-const projectBox = document.querySelectorAll(".project");
-const closeBox = document.querySelectorAll(".close-btn")
 
 
+function sendMail(event){
+    event.preventDefault()
 
-projectBox.forEach((e)=>{
-    e.addEventListener('click',()=>{
-        e.classList.add("wide")
-    })
-})
+    let parameters = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("mail-content").value
+    }
 
+    emailjs.send("service_yiw4t4p","template_ykz06zh",parameters).then(alert("email sent"))
+}
 
-projectBox.forEach((item)=>{
-    item.querySelector(".close-btn").addEventListener("click",(e)=>{
-        e.stopPropagation()
-        item.classList.remove("wide")
-    })
-})
+document.getElementById("form-mail").onsubmit =sendMail
